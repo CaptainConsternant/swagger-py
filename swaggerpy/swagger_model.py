@@ -7,7 +7,10 @@
 
 import json
 import os
-import urllib.parse as urlparse
+try :
+    import urlparse
+except:
+    import urllib.parse as urlparse
 import urlparse
 
 from swaggerpy.http_client import SynchronousHttpClient
