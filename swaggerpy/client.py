@@ -61,7 +61,7 @@ class Operation(object):
         :param kwargs: ARI operation arguments.
         :return: Implementation specific response or WebSocket connection
         """
-        log.info("%s?%r" % (self.json['nickname'], urlencode(kwargs)))
+        log.info("%s?%r" % (self.json['nickname'], encode(kwargs)))
         method = self.json['httpMethod']
         uri = self.uri
         params = {}
