@@ -7,7 +7,7 @@
 
 import json
 import os
-import urllib
+import urllib.parse as urlparse
 import urlparse
 
 from swaggerpy.http_client import SynchronousHttpClient
